@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h1>Список задач</h1>
-		<form @submit.prevent="createTask">
+		<form @submit.prevent="createTask" class="create-form">
 			<div class="input-container">
 				<input type="text" id="input" required="" v-model="taskText" />
 				<label for="input" class="label">Введите текст задачи</label>
@@ -96,6 +96,9 @@
 </script>
 
 <style lang="scss">
+	.create-form {
+		margin-bottom: 25px;
+	}
 	.input-container {
 		position: relative;
 		margin: 35px auto 10px;

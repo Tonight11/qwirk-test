@@ -1,7 +1,9 @@
 <template>
 	<div id="app">
 		<TheHeader />
-		<router-view />
+		<div class="container">
+			<router-view />
+		</div>
 	</div>
 </template>
 
@@ -10,17 +12,24 @@
 </script>
 
 <style lang="scss">
-*, *::before, *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+	*,
+	*::before,
+	*::after {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
 	#app {
 		font-family: Avenir, Helvetica, Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		text-align: center;
 		color: #2c3e50;
+	}
+	.container {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 0 10px;
 	}
 
 	nav {
