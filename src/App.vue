@@ -10,6 +10,11 @@
 </script>
 
 <style lang="scss">
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 	#app {
 		font-family: Avenir, Helvetica, Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
@@ -36,14 +41,15 @@
 		flex-direction: column;
 		gap: 10px;
 		&__item {
-			display: flex;
 			align-items: center;
 			gap: 20px;
 			justify-content: space-between;
-			background-color: #f8f7f6;
+			background-color: #ecf7f0;
 			list-style: none;
 			display: flex;
 			box-shadow: 5px 15px 15px rgba(65, 65, 65, 0.247);
+			padding: 15px 10px;
+			border-radius: 8px;
 
 			& p {
 				flex: 1;

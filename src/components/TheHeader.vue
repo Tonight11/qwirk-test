@@ -10,7 +10,7 @@
 
 <style lang="scss">
 	.header {
-		background-color: #f0f0f0;
+		background-color: #f3f8ff;
 		padding: 10px;
 		&__nav {
 			display: flex;
